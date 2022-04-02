@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=JovarkOS Dark
+Comment=Dark, Clean Modern desktop theme
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=JovarkOS Dark
+IconTheme=JovarkOS
+MetacityTheme=JovarkOS
+ButtonLayout=:minimize,maximize,close
