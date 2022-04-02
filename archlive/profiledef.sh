@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # shellcheck disable=SC2034
 
-iso_name="JovarkOS Live Installer "
+iso_name="JovarkOS Live Installer"
 iso_label="jovarkos-$(date +%Y.%m.%d)-x86_64"
 iso_publisher="JovarkOS <https://jovarkos.org>"
 iso_application="JovarkOS Live Installer"
