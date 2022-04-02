@@ -1,0 +1,17 @@
+# Last updated: Sat Apr  2 04:00:50 PM EDT 2022
+
+# Primary server: hosted on Linode 
+# 	  Global Linode Status: https://status.linode.com
+#     Link speed: 1 Gbit/s out
+#     Server Location: Newark, NJ, USA
+#     Server Country: US
+#     Server Region: NJ
+#     Server City: Newark
+
+Server = https://repo.jovarkos.org/x86_64
+
+# Hosted on GitHub pages. Intended to be a backup for the official repo.
+#     Status page: https://www.githubstatus.com
+#     Link speed: Unknown
+
+Server = https://github.com/JovarkOS/jovarkos-repo/raw/main/x86_64/
