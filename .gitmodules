@@ -1,4 +1,4 @@
-[submodule "ohmyzsh"]
+[submodule "archlive/airootfs/etc/skel/.oh-my-zsh"]
 	path = archlive/airootfs/etc/skel/.oh-my-zsh
 	url = https://github.com/ohmyzsh/ohmyzsh.git
 [submodule "jovarkos-backgrounds"]
