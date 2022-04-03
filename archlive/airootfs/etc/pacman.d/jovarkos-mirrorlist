@@ -1,4 +1,4 @@
-# Last updated: Sat Apr  2 04:00:50 PM EDT 2022
+# Last updated: Sat Apr  2 07:56:21 PM EDT 2022 
 
 # Primary server: hosted on Linode 
 # 	  Global Linode Status: https://status.linode.com
@@ -10,8 +10,9 @@
 
 Server = https://repo.jovarkos.org/x86_64
 
-# Hosted on GitHub pages. Intended to be a backup for the official repo.
-#     Status page: https://www.githubstatus.com
+# Hosted on Netlify pages. Intended to be a backup for the official repo.
+#     Status page: https://www.netlifystatus.com
 #     Link speed: Unknown
+#     Server Location: Distributed CDN
 
-Server = https://github.com/JovarkOS/jovarkos-repo/raw/main/x86_64/
+Server = https://repo-secondary.jovarkos.org/x86_64/
