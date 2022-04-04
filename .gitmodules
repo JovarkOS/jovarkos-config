@@ -1,3 +1,3 @@
 [submodule "jovarkos-backgrounds"]
-  path = jovarkos-backgrounds
+  path = archlive/airootfs/usr/share/wallpapers/jovarkos-backgrounds
   url = https://github.com/JovarkOS/jovarkos-backgrounds
