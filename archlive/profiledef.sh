@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # shellcheck disable=SC2034
 
-iso_name="JovarkOS Live Installer"
+iso_name="jovarkos"
 iso_label="jovarkos-$(date +%Y.%m.%d)-x86_64"
 iso_publisher="JovarkOS <https://jovarkos.org>"
 iso_application="JovarkOS Live Installer"
@@ -20,4 +20,6 @@ file_permissions=(
   ["/usr/local/bin/choose-mirror"]="0:0:755"
   ["/usr/local/bin/Installation_guide"]="0:0:755"
   ["/usr/local/bin/livecd-sound"]="0:0:755"
+  ["/usr/share/wallpapers"]="0:0:755"
+  ["/etc/skel"]="0:0:755"
 )
