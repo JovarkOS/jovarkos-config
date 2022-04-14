@@ -122,8 +122,6 @@ zsh
 jovarkos-calamares-config-pure
 jovarkos-calamares
 ventoy
-plasma
-sddm
 gparted
 linux-zen
 
@@ -145,3 +143,4 @@ vivaldi-stable
 firefox
 timeshift
 btrfs-progs
+ulauncher
