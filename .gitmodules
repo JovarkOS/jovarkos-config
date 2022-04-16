@@ -2,7 +2,6 @@
   path = archlive/airootfs/usr/share/wallpapers/jovarkos-backgrounds
   url = https://github.com/jovarkos/jovarkos-backgrounds
 
-  
 [submodule "archlive/airootfs/root/.ohmyzsh"]
 	path = archlive/airootfs/root/.ohmyzsh
 	url = https://github.com/ohmyzsh/ohmyzsh
