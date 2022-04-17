@@ -1,0 +1,3 @@
+#!/bin/sh
+
+cat /etc/gdm/jovarkos-default-dconf | dconf load / 
