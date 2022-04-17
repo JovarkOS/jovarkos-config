@@ -1,0 +1,15 @@
+# Last updated: Sat Apr 16 09:17:36 PM EDT 2022 
+
+# Primary server: hosted on Linode 
+#     Global Linode Status: https://status.linode.com
+#     Link speed: 1 Gbit/s
+#     Server Location: Newark, NJ, USA
+
+Server = https://repo.jovarkos.org/x86_64/
+
+# Hosted on Netlify pages. Intended to be a backup for the official repo.
+#     Status page: https://www.netlifystatus.com
+#     Link speed: Unknown
+#     Server Location: Distributed CDN
+
+Server = https://repo-secondary.jovarkos.org/x86_64/
