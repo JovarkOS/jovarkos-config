@@ -1,0 +1,6 @@
+#!/bin/sh
+
+cd .ohmyzsh
+git pull
+curl 
+dconf load / 
