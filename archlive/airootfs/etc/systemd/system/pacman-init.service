@@ -8,7 +8,6 @@ Type=oneshot
 RemainAfterExit=yes
 ExecStart=/usr/bin/pacman-key --init
 ExecStart=/usr/bin/pacman-key --populate
-ExecStart=/usr/bin/pacmman -Sy
 
 [Install]
 WantedBy=multi-user.target
