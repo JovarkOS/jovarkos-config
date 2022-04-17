@@ -1,0 +1,333 @@
+[org/gnome/Disks]
+image-dir-uri='file:///home/'
+
+[org/gnome/Disks/benchmark]
+do-write=true
+num-access-samples=1000
+num-samples=100
+sample-size-mib=10
+
+[org/gnome/GPaste]
+close-on-select=true
+element-size=uint64 40
+history-name='history'
+images-support=true
+launch-ui='<Super>v'
+max-displayed-history-size=uint64 24
+max-history-size=uint64 1195
+max-memory-usage=uint64 140
+trim-items=true
+
+[org/gnome/Totem]
+active-plugins=['vimeo', 'variable-rate', 'skipto', 'screenshot', 'screensaver', 'save-file', 'rotation', 'recent', 'pythonconsole', 'movie-properties', 'opensubtitles', 'open-directory', 'media-player-keys', 'totem-im-status', 'dbusservice', 'autoload-subtitles', 'apple-trailers']
+brightness=33582
+saturation=32508
+subtitle-encoding='UTF-8'
+
+[org/gnome/baobab/ui]
+active-chart='rings'
+window-size=(1210, 706)
+window-state=87168
+
+[org/gnome/boxes]
+first-run=true
+view='icon-view'
+window-maximized=false
+
+[org/gnome/desktop/a11y/applications]
+screen-reader-enabled=false
+
+[org/gnome/desktop/app-folders]
+folder-children=['Utilities', 'YaST']
+
+[org/gnome/desktop/app-folders/folders/Utilities]
+apps=['gnome-abrt.desktop', 'gnome-system-log.desktop', 'gnome-system-monitor.desktop', 'gucharmap.desktop', 'nm-connection-editor.desktop', 'org.gnome.baobab.desktop', 'org.gnome.Calculator.desktop', 'org.gnome.DejaDup.desktop', 'org.gnome.Dictionary.desktop', 'org.gnome.DiskUtility.desktop', 'org.gnome.eog.desktop', 'org.gnome.Evince.desktop', 'org.gnome.FileRoller.desktop', 'org.gnome.fonts.desktop', 'org.gnome.Screenshot.desktop', 'org.gnome.seahorse.Application.desktop', 'org.gnome.Terminal.desktop', 'org.gnome.tweaks.desktop', 'org.gnome.Usage.desktop', 'simple-scan.desktop', 'vinagre.desktop', 'yelp.desktop']
+categories=['X-GNOME-Utilities']
+name='X-GNOME-Utilities.directory'
+translate=true
+
+[org/gnome/desktop/app-folders/folders/YaST]
+categories=['X-SuSE-YaST']
+name='suse-yast.directory'
+translate=true
+
+[org/gnome/desktop/background]
+color-shading-type='solid'
+picture-options='zoom'
+picture-uri='file:///usr/share/backgrounds/jovarkos-backgrounds/JovarkOS_0.png'
+picture-uri-dark='file:///usr/share/backgrounds/jovarkos-backgrounds/JovarkOS_0.png'
+primary-color='#000000000000'
+secondary-color='#000000000000'
+
+[org/gnome/desktop/calendar]
+show-weekdate=true
+
+[org/gnome/desktop/input-sources]
+mru-sources=[('xkb', 'us')]
+per-window=false
+sources=[('xkb', 'us')]
+xkb-options=['grp:alt_shift_toggle']
+
+[org/gnome/desktop/interface]
+automatic-mnemonics=false
+clock-format='24h'
+clock-show-seconds=true
+clock-show-weekday=true
+color-scheme='prefer-dark'
+cursor-size=24
+cursor-theme='Adwaita'
+enable-animations=false
+enable-hot-corners=false
+font-antialiasing='grayscale'
+font-hinting='slight'
+font-name='Noto Sans,  10'
+gtk-theme='JovarkOS Theme'
+icon-theme='JovarkOS'
+show-battery-percentage=false
+toolbar-style='text'
+
+[org/gnome/desktop/media-handling]
+autorun-x-content-ignore=@as []
+autorun-x-content-open-folder=@as []
+autorun-x-content-start-app=['x-content/ostree-repository', 'x-content/image-dcf', 'x-content/audio-player', 'x-content/video-dvd', 'x-content/audio-cdda']
+
+[org/gnome/desktop/peripherals/keyboard]
+numlock-state=true
+
+[org/gnome/desktop/peripherals/mouse]
+natural-scroll=false
+
+[org/gnome/desktop/peripherals/touchpad]
+natural-scroll=true
+two-finger-scrolling-enabled=true
+
+[org/gnome/desktop/screensaver]
+color-shading-type='solid'
+picture-options='zoom'
+picture-uri='file:///usr/share/backgrounds/jovarkos-backgrounds/JovarkOS_0.png'
+primary-color='#000000000000'
+secondary-color='#000000000000'
+
+[org/gnome/desktop/search-providers]
+sort-order=['org.gnome.Contacts.desktop', 'org.gnome.Documents.desktop', 'org.gnome.Nautilus.desktop']
+
+[org/gnome/desktop/session]
+idle-delay=uint32 300
+
+[org/gnome/desktop/wm/keybindings]
+panel-run-dialog=['<Super>r']
+
+[org/gnome/desktop/wm/preferences]
+button-layout='icon:minimize,maximize,close'
+focus-mode='sloppy'
+
+[org/gnome/eog/ui]
+sidebar=false
+
+[org/gnome/eog/view]
+background-color='rgb(0,0,0)'
+use-background-color=true
+
+[org/gnome/file-roller/dialogs/extract]
+recreate-folders=true
+skip-newer=false
+
+[org/gnome/file-roller/listing]
+list-mode='as-folder'
+name-column-width=250
+show-path=false
+sort-method='size'
+sort-type='descending'
+
+[org/gnome/file-roller/ui]
+sidebar-width=200
+window-height=480
+window-width=600
+
+[org/gnome/gedit/plugins]
+active-plugins=['time', 'spell', 'sort', 'snippets', 'quickopen', 'quickhighlight', 'modelines', 'filebrowser', 'externaltools', 'docinfo']
+
+[org/gnome/gedit/plugins/filebrowser]
+root='file:///'
+tree-view=true
+virtual-root='file:///home/'
+
+[org/gnome/gedit/preferences/editor]
+auto-save-interval=uint32 1
+background-pattern='none'
+display-right-margin=false
+scheme='oblivion'
+use-default-font=true
+wrap-last-split-mode='word'
+
+[org/gnome/gedit/preferences/ui]
+bottom-panel-visible=false
+show-tabs-mode='auto'
+statusbar-visible=true
+
+[org/gnome/gedit/state/file-chooser]
+open-recent=false
+
+[org/gnome/gedit/state/window]
+bottom-panel-active-page='GeditExternalToolsShellOutput'
+bottom-panel-size=102
+side-panel-active-page='GeditWindowDocumentsPanel'
+side-panel-size=200
+size=(1706, 699)
+state=87168
+
+[org/gnome/gnome-nettool]
+hostnames=['jovarkos.org', 'repo.jovarkos.org']
+
+[org/gnome/gnome-system-monitor]
+current-tab='processes'
+graph-data-points=53
+maximized=false
+network-in-bits=false
+network-total-in-bits=false
+network-total-unit=true
+show-all-fs=false
+show-dependencies=false
+show-whose-processes='all'
+
+[org/gnome/gnome-system-monitor/disktreenew]
+col-0-visible=true
+col-0-width=114
+col-1-visible=true
+col-1-width=339
+col-6-visible=true
+col-6-width=0
+columns-order=[0, 1, 2, 3, 4, 5, 6]
+sort-col=5
+sort-order=1
+
+[org/gnome/mutter]
+workspaces-only-on-primary=false
+
+[org/gnome/nautilus/compression]
+default-compression-format='zip'
+
+[org/gnome/nautilus/icon-view]
+default-zoom-level='standard'
+
+[org/gnome/nautilus/preferences]
+default-folder-viewer='icon-view'
+executable-text-activation='launch'
+search-filter-time-type='last_modified'
+search-view='list-view'
+show-delete-permanently=true
+
+[org/gnome/settings-daemon/plugins/media-keys]
+area-screenshot-clip=['Print']
+custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/']
+eject=['<Primary>Escape']
+screenshot=@as []
+volume-down=['<Primary>Page_Down']
+volume-mute=['<Primary>End']
+volume-up=['<Primary>Page_Up']
+
+[org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0]
+binding='<Control><Alt>t'
+command='gnome-terminal %U'
+name='Terminal'
+
+[org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1]
+binding='<Primary><Shift>Escape'
+command='gnome-system-monitor'
+name='GNOME System Monitor'
+
+[org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2]
+binding='<Super>e'
+command='nautilus'
+name='Open Nautilus'
+
+[org/gnome/settings-daemon/plugins/power]
+power-button-action='suspend'
+sleep-inactive-ac-type='nothing'
+
+[org/gnome/shell]
+disable-user-extensions=false
+enabled-extensions=['spotify-artwork-fixer@wjt.me.uk', 'gnomespotifylabel@mheine.github.com', 'MediaKeys_to_MPRIS2@ryan.ryandavies.co.nz', 'sound-output-device-chooser@kgshank.net', 'openweather-extension@jenslody.de', 'windowIsReady_Remover@nunofarruca@gmail.com', 'ubuntu-dock@ubuntu.com', 'ubuntu-appindicators@ubuntu.com', 'dash-to-dock@micxgx.gmail.com', 'arch-update@RaphaelRochet', 'CoverflowAltTab@palatis.blogspot.com', 'spotify-ad-block@danigm.net', 'no-overview@fthx', 'apps-menu@gnome-shell-extensions.gcampax.github.com', 'auto-move-windows@gnome-shell-extensions.gcampax.github.com', 'launch-new-instance@gnome-shell-extensions.gcampax.github.com', 'native-window-placement@gnome-shell-extensions.gcampax.github.com', 'places-menu@gnome-shell-extensions.gcampax.github.com', 'drive-menu@gnome-shell-extensions.gcampax.github.com', 'screenshot-window-sizer@gnome-shell-extensions.gcampax.github.com', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'windowsNavigator@gnome-shell-extensions.gcampax.github.com', 'workspace-indicator@gnome-shell-extensions.gcampax.github.com', 'transparent-window-moving@noobsai.github.com', 'transparent-top-bar@ftpix.com', 'GPaste@gnome-shell-extensions.gnome.org', 'desktop-cube@schneegans.github.com', 'gsconnect@andyholmes.github.io', 'cosmic-dock@system76.com', 'cosmic-workspaces@system76.com', 'pop-cosmic@system76.com', 'dash-to-dock@tauos.co']
+favorite-apps=['org.gnome.Nautilus.desktop', 'vivaldi-stable.desktop', 'gnome-system-monitor.desktop', 'org.gnome.Terminal.desktop', 'org.gnome.Boxes.desktop', 'authy_authy.desktop', 'spotify.desktop', 'org.gnome.Settings.desktop']
+had-bluetooth-devices-setup=false
+welcome-dialog-last-shown-version='40.0'
+
+[org/gnome/shell/extensions/arch-update]
+update-cmd="gnome-terminal -e 'sh -c  \"sudo pacman -Syu\" '"
+
+
+[org/gnome/shell/extensions/dash-to-dock]
+apply-custom-theme=false
+background-opacity=0.80000000000000004
+click-action='skip'
+custom-theme-shrink=true
+dash-max-icon-size=32
+disable-overview-on-startup=true
+dock-fixed=true
+dock-position='BOTTOM'
+extend-height=false
+force-straight-corner=false
+height-fraction=0.90000000000000002
+icon-size-fixed=false
+intellihide-mode='FOCUS_APPLICATION_WINDOWS'
+isolate-workspaces=false
+middle-click-action='launch'
+preferred-monitor=-2
+preferred-monitor-by-connector='DVI-0'
+preview-size-scale=0.10000000000000001
+running-indicator-style='DOTS'
+scroll-action='switch-workspace'
+shift-click-action='minimize'
+shift-middle-click-action='launch'
+shortcut-timeout=0.75
+show-apps-at-top=true
+show-mounts-network=false
+show-mounts-only-mounted=true
+transparency-mode='DEFAULT'
+
+[org/gnome/shell/extensions/desktop-cube]
+unfold-to-desktop=true
+
+[org/gnome/shell/extensions/user-theme]
+name=''
+
+[org/gnome/shell/extensions/window-list]
+grouping-mode='always'
+
+[org/gnome/shell/extensions/windowIsReady_Remover]
+prevent-disable=true
+
+[org/gnome/shell/keybindings]
+toggle-message-tray=@as []
+
+[org/gnome/shell/world-clocks]
+locations=@av []
+
+[org/gnome/terminal/legacy/profiles:]
+default='99e557f1-201b-446d-a94e-06053d67ccbc'
+list=['b1dcc9dd-5262-4d8d-a863-c897e6d979b9']
+
+
+[org/gnome/terminal/legacy/profiles:/:b1dcc9dd-5262-4d8d-a863-c897e6d979b9]
+background-color='rgb(23,20,33)'
+bold-color-same-as-fg=true
+cursor-colors-set=false
+cursor-foreground-color='rgb(255,255,255)'
+default-size-columns=140
+default-size-rows=34
+foreground-color='rgb(208,207,204)'
+palette=['rgb(23,20,33)', 'rgb(192,28,40)', 'rgb(38,162,105)', 'rgb(212,150,12)', 'rgb(18,72,139)', 'rgb(163,71,186)', 'rgb(42,161,179)', 'rgb(208,207,204)', 'rgb(94,92,100)', 'rgb(246,97,81)', 'rgb(51,218,122)', 'rgb(233,173,12)', 'rgb(42,123,222)', 'rgb(192,97,203)', 'rgb(51,199,222)', 'rgb(255,255,255)']
+use-system-font=true
+use-theme-colors=false
+
+[org/gtk/settings/file-chooser]
+clock-format='12h'
+date-format='regular'
+location-mode='path-bar'
+show-hidden=false
+show-size-column=true
+show-type-column=true
+sort-column='name'
+sort-directories-first=true
+sort-order='descending'
+type-format='category'
