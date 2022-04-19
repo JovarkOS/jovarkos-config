@@ -3,8 +3,11 @@ set -e --used -i 's/#\(en_US\.UTF-8\)/\1/' /etc/locale.gen
 locale-gen
 ln -sf /usr/share/zoneinfo/UTC /etc/localtime
 usermod -s /usr/bin/zsh root
+
+# Add cli configuration to skeleton user directory
 git clone https://github.com/ohmyzsh/ohmyzsh.git /etc/skel/.oh-my-zsh
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git /etc/skel/.oh-my-zsh/custom/themes/powerlevel10k
+
 # Copy files from /etc/skel to /root
 cp -aT /etc/skel/ /root/
 chmod 700 /root
@@ -14,12 +17,17 @@ sed -i 's/#\(Storage=\)auto/\1volatile/' /etc/systemd/journald.conf
 sed -i 's/#\(HandleSuspendKey=\)suspend/\1ignore/' /etc/systemd/logind.conf
 sed -i 's/#\(HandleHibernateKey=\)hibernate/\1ignore/' /etc/systemd/logind.conf
 sed -i 's/#\(HandleLidSwitch=\)suspend/\1ignore/' /etc/systemd/logind.conf
+# Enable services
 systemctl enable pacman-init.service choose-mirror.service
 systemctl set-default multi-user.target
 systemctl enable gdm.service
-systemctl enable NetworkManager.service
-# Move .zshrc.new (named other than .zshrc to not conflict with package install) to .zshrc 
-mv /etc/skel/.zshrc.new /etc/skel/.zshrc
+
+# Rename config.rename files (.rename appended so as to not conflict with package install)  \
+mv /etc/skel/.zshrc.rename /etc/skel/.zshrc
+mv /etc/xdg/user-dirs.defaults.rename mv /etc/xdg/user-dirs.defaults
+mv /etc/sudo.conf.rename /etc/sudo.conf
+mv /etc/sudoers.rename /etc/sudoers
+
 # Add sudo user to sudoers file
 echo "liveuser ALL=(ALL:ALL) ALL" >> /etc/sudoers
 useradd -m -G wheel liveuser
@@ -27,6 +35,7 @@ useradd -m -G wheel liveuser
 echo "jovarkos" | passwd liveuser
 # This next step is the most important: it will permit us to "pause" the mkarchiso process and customize it regarding our needs.
 su liveuser
+
 systemctl --user enable ulauncher.service
 pacman -Sy
 pacman-key --init
