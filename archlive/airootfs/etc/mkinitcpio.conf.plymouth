@@ -60,7 +60,8 @@ HOOKS="base udev resume autodetect modconf block filesystems keyboard fsck"
 #COMPRESSION="xz"
 #COMPRESSION="lzop"
 #COMPRESSION="lz4"
-COMPRESSION="cat"
+#COMPRESSION="cat"
+COMPRESSION="zstd"
 
 # COMPRESSION_OPTIONS
 # Additional options for the compressor
