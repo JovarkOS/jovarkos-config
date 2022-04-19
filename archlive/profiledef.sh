@@ -6,7 +6,7 @@ iso_publisher="JovarkOS <https://jovarkos.org>"
 iso_application="JovarkOS Live Installer"
 iso_version="$(date +%Y.%m.%d)"
 # Date format: YYY.MM.DD:HH:MM:SS
-iso_label="jovarkos-$(date +%Y.%m.%d-%H:%M:%S)-x86_64.iso"
+iso_label="jovarkos-$(date +%Y.%m.%d)-x86_64.iso"
 install_dir="arch"
 buildmodes=('iso')
 bootmodes=('bios.syslinux.mbr' 'bios.syslinux.eltorito' 'uefi-x64.systemd-boot.esp' 'uefi-x64.systemd-boot.eltorito')
