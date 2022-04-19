@@ -1,4 +1,0 @@
-#!/bin/sh
-
-mv /etc/skel/.zshrc.new /etc/skel/.zshrc
-cat /etc/gdm/jovarkos-default-dconf | dconf load / 
