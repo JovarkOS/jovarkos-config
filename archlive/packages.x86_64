@@ -1,4 +1,3 @@
-alsa-utils
 amd-ucode
 arch-install-scripts
 archinstall
@@ -7,7 +6,6 @@ base
 bind-tools
 brltty
 broadcom-wl
-btrfs-progs
 clonezilla
 cloud-init
 crda
@@ -19,14 +17,10 @@ dhcpcd
 diffutils
 dmraid
 dnsmasq
-dosfstools
-e2fsprogs
 edk2-shell
 efibootmgr
 espeakup
 ethtool
-exfatprogs
-f2fs-tools
 fatresize
 fsarchiver
 gnu-netcat
@@ -68,10 +62,7 @@ mtools
 nano
 nbd
 ndisc6
-nfs-utils
-nilfs-utils
 nmap
-ntfs-3g
 nvme-cli
 openconnect
 openssh
@@ -86,7 +77,6 @@ pv
 qemu-guest-agent
 refind
 reflector
-reiserfsprogs
 rp-pppoe
 rsync
 rxvt-unicode-terminfo
@@ -95,7 +85,6 @@ sdparm
 sg3_utils
 smartmontools
 sof-firmware
-squashfs-tools
 sudo
 syslinux
 systemd-resolvconf
@@ -108,37 +97,79 @@ udftools
 usb_modeswitch
 usbmuxd
 usbutils
-vim
+
 virtualbox-guest-utils-nox
 vpnc
 wireless-regdb
 wireless_tools
 wpa_supplicant
 wvdial
-xfsprogs
 xl2tpd
 zsh
 
+# JovarkOS packages
 jovarkos-calamares-config-pure
 jovarkos-calamares
+
+# Calamares dependancies
+kpmcore
+boost
+extra-cmake-modules
+kcoreaddons
+yaml-cpp
+
+# Browsers
+lynx
+vivaldi
+firefox
+
+# Disk utilities
 ventoy
 gparted
-linux-zen
 
-flatpak
-git
+# Desktop Utilities & Applications
+ulauncher
 vlc
-curl
-lynx
-neofetch
-nano
-vim
+linux-zen
 alacritty
+
+# Command line utilities
+git
+curl
+neofetch
 exa
 htop
 bat
+
+# Text editors
+nano
+vim
+
+# Package Managers
+flatpak
+
+# Services
 cups
-vivaldi
-firefox
+alsa-utils
+
+# File system drivers
+exfatprogs
+f2fs-tools
+fatresize
+fsarchiver
+xfsprogs
 btrfs-progs
-ulauncher
+reiserfsprogs
+squashfs-tools
+nfs-utils
+nilfs-utils
+ntfs-3g
+dosfstools
+e2fsprogs
+exfatprogs
+f2fs-tools
+
+# DE dependant
+gnome
+gnome-tweaks
+gdm
