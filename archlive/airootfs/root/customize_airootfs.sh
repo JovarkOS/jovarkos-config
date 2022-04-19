@@ -23,8 +23,8 @@ mv /etc/skel/.zshrc.new /etc/skel/.zshrc
 # Add sudo user to sudoers file
 echo "liveuser ALL=(ALL:ALL) ALL" >> /etc/sudoers
 useradd -m -G wheel liveuser
-# Add unixtime as password for live user (but immediately expire it for resetting on next login) so we can use sudo
-echo $(date +%S) | passwd -e liveuser
+# Add unixtime as password for live user so we can use sudo
+echo "jovarkos" | passwd liveuser
 # This next step is the most important: it will permit us to "pause" the mkarchiso process and customize it regarding our needs.
 su liveuser
 systemctl --user enable ulauncher.service
@@ -34,4 +34,7 @@ pacman-key --populate archlinux
 # Set GNOME themes and icons
 gsettings set org.gnome.desktop.interface gtk-theme "JovarkOS"
 gsettings set org.gnome.desktop.interface icon-theme "JovarkOS"
-# Run a shell, use exit to continue 
+# Exit liveuser session
+exit
+# Expire liveuser password for resetting on next login (don't do this above so the chroot doesn't get forced to update the password)
+passwd -e liveuser
