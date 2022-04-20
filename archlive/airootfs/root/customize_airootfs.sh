@@ -33,7 +33,8 @@ mv /etc/skel/.xinitrc.rename /etc/skel/.xinitrc
 # echo "liveuser ALL=(ALL:ALL) ALL" >> /etc/sudoers
 # Add user to wheel and nopasswdlogin groups
 useradd -m -G wheel liveuser nopasswdlogin
-
+mkdir -p /home/liveuser/
+cp -aT /etc/skel/ /home/liveuser/
 usermod -s /usr/bin/zsh liveuser
 # Add standardized password for live user so we can use sudo
 (echo 'jovarkos'; echo 'jovarkos') | passwd liveuser
