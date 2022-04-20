@@ -21,6 +21,11 @@ sed -i 's/#\(HandleLidSwitch=\)suspend/\1ignore/' /etc/systemd/logind.conf
 systemctl enable pacman-init.service choose-mirror.service
 systemctl set-default multi-user.target
 systemctl enable gdm.service
+ln -sf /usr/lib/systemd/system/gdm.service /etc/systemd/system/display-manager.service
+
+sudo systemctl enable NetworkManager
+sudo systemctl start NetworkManager
+
 
 # Rename config.rename files (.rename appended so as to not conflict with package install)  \
 mv /etc/skel/.zshrc.rename /etc/skel/.zshrc
