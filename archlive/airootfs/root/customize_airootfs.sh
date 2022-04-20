@@ -7,6 +7,8 @@ usermod -s /usr/bin/zsh root
 # Add cli configuration to skeleton user directory
 git clone https://github.com/ohmyzsh/ohmyzsh.git /etc/skel/.oh-my-zsh
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git /etc/skel/.oh-my-zsh/custom/themes/powerlevel10k
+git clone https://github.com/zsh-users/zsh-autosuggestions /etc/skel/.oh-my-zsh/custom/plugins/zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git /etc/skel/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
 
 # Copy files from /etc/skel to /root
 cp -aT /etc/skel/ /root/
@@ -22,7 +24,7 @@ systemctl enable pacman-init.service choose-mirror.service
 systemctl set-default multi-user.target
 systemctl enable gdm.service
 
-# Rename config.rename files (.rename appended so as to not conflict with package install)  \
+# Rename config.rename files (.rename appended so as to not conflict with package install) 
 mv /etc/skel/.zshrc.rename /etc/skel/.zshrc
 mv /etc/xdg/user-dirs.defaults.rename mv /etc/xdg/user-dirs.defaults
 mv /etc/sudo.conf.rename /etc/sudo.conf
@@ -35,9 +37,12 @@ mv /etc/skel/.xinitrc.rename /etc/skel/.xinitrc
 useradd -m -G wheel liveuser nopasswdlogin
 mkdir -p /home/liveuser/
 cp -aT /etc/skel/ /home/liveuser/
+chown -R liveuser:liveuser /home/liveuser/
 usermod -s /usr/bin/zsh liveuser
+
 # Add standardized password for live user so we can use sudo
 (echo 'jovarkos'; echo 'jovarkos') | passwd liveuser
+
 # This next step is the most important: it will permit us to "pause" the mkarchiso process and customize it regarding our needs.
 su liveuser
 systemctl --user enable ulauncher.service

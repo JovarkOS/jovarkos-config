@@ -1,4 +1,10 @@
+# Bootup
+efibootmgr
 amd-ucode
+grub
+intel-ucode
+
+
 arch-install-scripts
 archinstall
 b43-fwcutter
@@ -13,15 +19,11 @@ cryptsetup
 diffutils
 dmraid
 edk2-shell
-efibootmgr
 espeakup
 grml-zsh-config
-grub
-intel-ucode
 ipw2100-fw
 ipw2200-fw
 irssi
-jfsutils
 kitty-terminfo
 lftp
 libfido2
@@ -74,6 +76,7 @@ yaml-cpp
 # Browsers
 lynx
 vivaldi
+vivaldi-ffmpeg-codecs
 firefox
 
 # Disk utilities
@@ -96,6 +99,24 @@ sdparm
 testdisk
 hdparm
 
+# File system drivers
+exfatprogs
+f2fs-tools
+fatresize
+fsarchiver
+xfsprogs
+btrfs-progs
+reiserfsprogs
+squashfs-tools
+nfs-utils
+nilfs-utils
+ntfs-3g
+dosfstools
+e2fsprogs
+exfatprogs
+f2fs-tools
+jfsutils
+
 # Desktop Utilities & Applications
 ulauncher
 vlc
@@ -109,7 +130,6 @@ neofetch
 exa
 htop
 bat
-fwupd
 less
 man-db
 man-pages
@@ -127,28 +147,23 @@ flatpak
 # Services
 cups
 alsa-utils
-
-# File system drivers
-exfatprogs
-f2fs-tools
-fatresize
-fsarchiver
-xfsprogs
-btrfs-progs
-reiserfsprogs
-squashfs-tools
-nfs-utils
-nilfs-utils
-ntfs-3g
-dosfstools
-e2fsprogs
-exfatprogs
-f2fs-tools
+fwupd
+ufw
 
 # DE dependant
 gnome
 gnome-tweaks
 gdm
+
+# XORG 
+xorg-server
+xf86-input-libinput
+xf86-video-amdgpu
+xf86-video-ati
+xf86-video-vesa
+xorg-xkill
+xorg-xrdb
+
 
 # Networking
 nmap
@@ -173,3 +188,7 @@ dnsmasq
 iw
 iwd
 ethtool
+
+# CLI Configuration
+zsh-syntax-highlighting
+zsh-autosuggestions
