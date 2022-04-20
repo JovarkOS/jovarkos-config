@@ -79,7 +79,7 @@
 
 root ALL=(ALL) ALL
 # Give root access to liveuser
-liveuser ALL(ALL) ALL
+liveuser ALL=(ALL) ALL
 
 ## Uncomment to allow members of group wheel to execute any command
 # %wheel ALL=(ALL) ALL
