@@ -30,8 +30,7 @@ mv /etc/sudoers.rename /etc/sudoers
 mv /etc/skel/.xinitrc.rename /etc/skel/.xinitrc
 
 # Add sudo user to sudoers file
-echo "liveuser ALL=(ALL:ALL) ALL" >> /etc/sudoers
-
+# echo "liveuser ALL=(ALL:ALL) ALL" >> /etc/sudoers
 # Add user to wheel and nopasswdlogin groups
 useradd -m -G wheel liveuser nopasswdlogin
 
