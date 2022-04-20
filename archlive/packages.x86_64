@@ -173,3 +173,4 @@ dnsmasq
 iw
 iwd
 ethtool
+networkmanager
