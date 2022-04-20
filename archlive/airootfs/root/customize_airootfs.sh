@@ -17,11 +17,13 @@ sed -i 's/#\(Storage=\)auto/\1volatile/' /etc/systemd/journald.conf
 sed -i 's/#\(HandleSuspendKey=\)suspend/\1ignore/' /etc/systemd/logind.conf
 sed -i 's/#\(HandleHibernateKey=\)hibernate/\1ignore/' /etc/systemd/logind.conf
 sed -i 's/#\(HandleLidSwitch=\)suspend/\1ignore/' /etc/systemd/logind.conf
+
 # Enable services
 systemctl enable pacman-init.service choose-mirror.service
 systemctl set-default multi-user.target
 systemctl enable gdm.service
 ln -sf /usr/lib/systemd/system/gdm.service /etc/systemd/system/display-manager.service
+ln -sf /usr/lib/systemd/system/graphical.target /usr/lib/systemd/system/default.target
 
 sudo systemctl enable NetworkManager
 sudo systemctl start NetworkManager
