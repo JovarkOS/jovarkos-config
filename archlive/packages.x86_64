@@ -192,3 +192,4 @@ ethtool
 # CLI Configuration
 zsh-syntax-highlighting
 zsh-autosuggestions
+networkmanager
