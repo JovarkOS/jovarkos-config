@@ -4,7 +4,6 @@ amd-ucode
 grub
 intel-ucode
 
-
 arch-install-scripts
 archinstall
 b43-fwcutter
@@ -193,3 +192,7 @@ ethtool
 zsh-syntax-highlighting
 zsh-autosuggestions
 networkmanager
+
+
+
+# exfatprogs ntfs-3g udftools libdvdcss libdvdnav libdvdread

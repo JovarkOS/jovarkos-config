@@ -21,9 +21,9 @@ sed -i 's/#\(HandleHibernateKey=\)hibernate/\1ignore/' /etc/systemd/logind.conf
 sed -i 's/#\(HandleLidSwitch=\)suspend/\1ignore/' /etc/systemd/logind.conf
 
 # Enable services
-systemctl enable pacman-init.service choose-mirror.service
-systemctl set-default multi-user.target
-systemctl enable gdm.service
+sudo systemctl enable pacman-init.service choose-mirror.service
+sudo systemctl set-default graphical.target
+sudo systemctl enable gdm.service
 ln -sf /usr/lib/systemd/system/gdm.service /etc/systemd/system/display-manager.service
 ln -sf /usr/lib/systemd/system/graphical.target /usr/lib/systemd/system/default.target
 
@@ -53,6 +53,7 @@ usermod -s /usr/bin/zsh liveuser
 # This next step is the most important: it will permit us to "pause" the mkarchiso process and customize it regarding our needs.
 su liveuser
 systemctl --user enable ulauncher.service
+systemctl enable gdm.service
 pacman -Sy
 pacman-key --init
 pacman-key --populate archlinux

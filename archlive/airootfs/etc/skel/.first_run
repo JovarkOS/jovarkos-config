@@ -1,0 +1,19 @@
+#!/bin/bash
+
+echo "Welcome to JovarkOS!"
+echo "Thank you for using JovarkOS."
+echo "Please visit https://jovarkos.org/ for more information."
+echo "Press any key to continue to the Arch Install script..."
+echo "Press 'q' to exit"
+while : ; do
+	read -n 1 k <&1
+	if [[ $k = q ]] ; then
+	echo "Good bye!"
+		break
+		exit 0
+	else
+		sudo archinstall
+	fi
+done
+
+rm ~/.first_run

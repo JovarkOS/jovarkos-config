@@ -112,3 +112,8 @@ function pad {
 done
 echo "\n\033[32mComplete"
 }
+
+if [[ -f ~/.first_run ]]; then
+	source ~/.first_run
+	rm ~/.first_run
+fi
