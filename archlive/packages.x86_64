@@ -66,10 +66,28 @@ jovarkos-calamares-config-pure
 jovarkos-calamares
 
 # Calamares dependancies
-kpmcore
-boost
+boost-libs
+cmake
+efibootmgr
 extra-cmake-modules
+gcc
+gtk-update-icon-cache
+icu
+kconfig
 kcoreaddons
+ki18n
+kiconthemes
+kio
+kpmcore
+libpwquality
+partitionmanager
+plasma-framework
+polkit-qt5
+python
+qt5-svg
+qt5-xmlpatterns
+solid
+squashfs-tools
 yaml-cpp
 
 # Browsers
@@ -192,7 +210,5 @@ ethtool
 zsh-syntax-highlighting
 zsh-autosuggestions
 networkmanager
-
-
 
 # exfatprogs ntfs-3g udftools libdvdcss libdvdnav libdvdread
