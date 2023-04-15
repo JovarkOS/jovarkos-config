@@ -11,6 +11,8 @@ MUSIC=Music
 PICTURES=Pictures
 VIDEOS=Videos
 PROJECTS=Projects
+AUR=AUR
+
 # Another alternative is:
 #MUSIC=Documents/Music
 #PICTURES=Documents/Pictures
