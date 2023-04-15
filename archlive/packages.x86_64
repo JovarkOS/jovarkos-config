@@ -20,8 +20,8 @@ dmraid
 edk2-shell
 espeakup
 grml-zsh-config
-ipw2100-fw
-ipw2200-fw
+# ipw2100-fw
+# ipw2200-fw
 irssi
 kitty-terminfo
 lftp
@@ -62,8 +62,8 @@ xl2tpd
 zsh
 
 # JovarkOS packages
-jovarkos-calamares-config-pure
-jovarkos-calamares
+#jovarkos-calamares-config-pure
+#jovarkos-calamares
 
 # Calamares dependancies
 boost-libs
@@ -97,7 +97,7 @@ vivaldi-ffmpeg-codecs
 firefox
 
 # Disk utilities
-ventoy
+# ventoy
 gparted
 partclone
 parted
@@ -134,8 +134,8 @@ exfatprogs
 f2fs-tools
 jfsutils
 
-# Desktop Utilities & Applications
-ulauncher
+# Desktop Utilities, Applications & Optimizations
+#ulauncher
 vlc
 linux-zen
 alacritty
