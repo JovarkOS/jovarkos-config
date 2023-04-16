@@ -1,9 +1,9 @@
 [submodule "archlive/airootfs/root/.ohmyzsh"]
 	path = archlive/airootfs/root/.ohmyzsh
 	url = https://github.com/ohmyzsh/ohmyzsh
-[submodule "archlive/airootfs/usr/share/wallpapers/jovarkos-backgrounds"]
-	path = archlive/airootfs/usr/share/wallpapers/jovarkos-backgrounds
-	url = https://github.com/jovarkos/jovarkos-backgrounds
+# [submodule "archlive/airootfs/usr/share/wallpapers/jovarkos-backgrounds"]
+# 	path = archlive/airootfs/usr/share/wallpapers/jovarkos-backgrounds
+# 	url = https://github.com/jovarkos/jovarkos-backgrounds
 [submodule "archlive/airootfs/etc/skel/archlive/airootfs/usr/skel/.ohmyzsh"]
 	path = archlive/airootfs/etc/skel/archlive/airootfs/usr/skel/.ohmyzsh
 	url = https://github.com/ohmyzsh/ohmyzsh
