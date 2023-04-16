@@ -198,9 +198,11 @@ networkmanager
 
 ***Build specific packages***
 GNOME:
+```bash
 gnome
 gnome-tweaks
 gdm
+```
 
 cinnamon:
 
