@@ -196,7 +196,8 @@ zsh-autosuggestions
 networkmanager
 ```
 
-***Build specific packages***
+**Build specific packages**
+
 GNOME:
 ```bash
 gnome
@@ -204,9 +205,9 @@ gnome-tweaks
 gdm
 ```
 
-cinnamon:
+Cinnamon:
 
-kde:
+KDE Plasma:
 
 i3:
 
