@@ -6,6 +6,7 @@ Each folder contains a set of configuration files for a specific build. The `arc
 
 All builds come with the following packages:
 
+```bash
 efibootmgr
 amd-ucode
 grub
@@ -167,7 +168,6 @@ xf86-video-vesa
 xorg-xkill
 xorg-xrdb
 
-
 nmap
 openconnect
 openssh
@@ -194,6 +194,7 @@ ethtool
 zsh-syntax-highlighting
 zsh-autosuggestions
 networkmanager
+```
 
 ***Build specific packages***
 GNOME:
