@@ -26,3 +26,7 @@ Run the following commands to install all profiles:
 ```bash
 make install
 ```
+
+## Todo
+
+- Fix worker.sh starting at 4:26, making it automatic for all the profile directories

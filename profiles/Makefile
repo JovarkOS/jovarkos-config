@@ -24,9 +24,6 @@ lxqt: global_packages.x86_64
 mate: global_packages.x86_64
 	@bash worker.sh mate
 
-pantheon: global_packages.x86_64
-	@bash worker.sh pantheon
-
 sway: global_packages.x86_64
 	@bash worker.sh sway
 
@@ -40,7 +37,6 @@ install : all
 	sudo cp -r kde /usr/share/archiso/configs/
 	sudo cp -r lxqt /usr/share/archiso/configs/
 	sudo cp -r mate /usr/share/archiso/configs/
-	sudo cp -r pantheon /usr/share/archiso/configs/
 	sudo cp -r sway /usr/share/archiso/configs/
 	sudo cp -r xfce /usr/share/archiso/configs/
 	sudo cp -r cinnamon /usr/share/archiso/configs/
