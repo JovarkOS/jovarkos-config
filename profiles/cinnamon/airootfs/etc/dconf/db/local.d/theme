@@ -1,0 +1,26 @@
+[org/cinnamon/desktop/interface]
+gtk-theme='Adapta'
+icon-theme='Papirus'
+font-name='Noto Sans Regular 10'
+
+[org/cinnamon/desktop/screensaver]
+lock-enabled=false
+
+[org/cinnamon/desktop/wm/preferences]
+theme='Adapta'
+titlebar-font='Noto Sans Bold 11'
+
+[org/cinnamon/theme]
+name='Adapta'
+
+[org/gnome/desktop/interface]
+document-font-name='Noto Sans Regular 11'
+
+[org/cinnamon/desktop/background]
+picture-options='zoom'
+picture-uri='file:///usr/share/backgrounds/gnome/adwaita-l.webp'
+
+[org/gnome/terminal/legacy/profiles:/:b1dcc9dd-5262-4d8d-a863-c897e6d979b9]
+background-color='rgb(0,0,0)'
+foreground-color='rgb(255,255,255)'
+use-theme-colors=false

@@ -1,6 +1,0 @@
-set magic
-set indicator
-set linenumbers
-set matchbrackets '"`(<[{'"`)>]}
-set minibar
-include "/usr/share/nano/*.nanorc"
